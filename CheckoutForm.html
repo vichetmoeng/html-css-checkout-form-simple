@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout Form Simple</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <form method="post">
+      <fieldset>
+        <h2>Shipping address</h2>
+        <div class="double-input">
+          <div>
+            <label for="fname">First name: <span>*</span></label>
+            <input id="fname" type="text" name="firstname" required />
+          </div>
+          <div>
+            <label for="lname">Last name: <span>*</span></label>
+            <input id="lname" type="text" name="lastname" required />
+          </div>
+        </div>
+        <div class="single-input">
+          <label for="address">Address: <span>*</span></label>
+          <input id="address" type="text" name="address" required />
+        </div>
+        <div class="double-input">
+          <div>
+            <label for="postcode">Postcode: <span>*</span></label>
+            <input id="postcode" type="text" name="postcode" required />
+          </div>
+          <div>
+            <label for="country">Country:</label>
+            <div class="select-wrapper">
+              <select id="country">
+                <option value="cambodia">Cambodia</option>
+                <option value="england">England</option>
+                <option value="scotland">Scotland</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <h2>Shipping method</h2>
+        <div class="checkbox">
+          <input id="standard" type="radio" name="shipping-method" value="standard" />
+          <label for="standard">Standard</label>
+        </div>
+        <div class="checkbox">
+          <input id="nextday" type="radio" name="shipping-method" value="nextday" />
+          <label for="nextday">Next day</label>
+        </div>
+        <button type="submit">Submit</button>
+      </fieldset>
+      
+    </form>
+  </body>
+</html>
